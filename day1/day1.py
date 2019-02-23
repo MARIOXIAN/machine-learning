@@ -103,3 +103,4 @@ final = d.drop_merge()
 
 print('1')
 print(final)
+print('3')
