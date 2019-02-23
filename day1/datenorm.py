@@ -43,3 +43,4 @@ def getDuration(se):
             return 1
 
     return tm
+
