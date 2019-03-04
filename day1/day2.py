@@ -221,12 +221,12 @@ class Data(object):
 
         y_train = target.values
 
-        return data,train,test,X_train,X_test,y_train
+        return data,train,test,X_train,X_test,y_train,target
 
     #lgb预测
     def lgb_prediction(self):
 
-        data, train, test,X_train,X_test,y_train = self.data_boost()
+        data, train, test,X_train,X_test,y_train,target = self.data_boost()
         # ----------------------------prediction---------------------------
 
         # ----------------------------lgb----------------------------------
@@ -272,7 +272,3 @@ train_overall,top_missing,top_percent = d.overall(name='train')
 final = d.drop_merge()
 
 d.lgb_prediction()
-
-print('1')
-print(final)
-print('3')
